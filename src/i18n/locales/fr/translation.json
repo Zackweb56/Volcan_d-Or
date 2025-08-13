@@ -1,0 +1,171 @@
+{
+  "navbar": {
+    "about": "À propos",
+    "services": "Nos services",
+    "innovation": "L'innovation de Volcan d'Or",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  
+  "hero": {
+    "subtitle": "ÉPARGNER ENSEMBLE, GRANDIR ENSEMBLE.",
+    "description": "Volcan d'or est une application mobile qui permet aux familles marocaines et MENA de constituer des portefeuilles d'épargne dédiés à leurs enfants ou à des objectifs familiaux, ainsi que de participer à des cycles de tontines (Daret) 100% digitales, sécurisées et automatisées.",
+    "download": "Télécharger l'application",
+    "google_small": "Disponible sur",
+    "google_main": "Google Play",
+    "apple_small": "Télécharger sur",
+    "apple_main": "App Store"
+  },
+
+  "about": {
+    "title": "À PROPOS",
+    "description": "Volcan d’Or est une application mobile développée par la startup marocaine Technologies d’Or, fondée pour créer des solutions digitales inclusives à fort impact social."
+  },
+
+  "services": {
+    "nos": "NOS",
+    "services": "SERVICES",
+    "description": "Volcan d'Or est une application mobile innovante dédiée à l'épargne familiale et communautaire. Elle permet aux familles marocaines et de la région MENA de sécuriser l'avenir de leurs enfants et de réaliser leurs objectifs financiers à travers deux services majeurs.",
+    "portfolios_title": "Portefeuilles d'épargne",
+    "portfolios_desc": "Portefeuilles d'épargne dédiés pour chaque enfant ou objectif familial.",
+    "point1": "Créez un portefeuille d'épargne pour chaque enfant ou objectif",
+    "point2": "Fixez un montant, une durée et une fréquence d'épargne",
+    "point3": "Rechargez votre Wallet avec des moyens de paiement locaux",
+    "point4": "L'argent est automatiquement transféré vers chaque portefeuille",
+    "point5": "Suivez l'évolution de votre épargne en temps réel",
+    "tontine_title": "Tontine Digitale",
+    "tontine_desc": "Service de tontine digitalisé entre amis, familles, collègues ou voisinage.",
+    "tontine_point1": "Créez ou rejoignez un groupe avec vos proches",
+    "tontine_point2": "Fixez les règles du jeu de la cagnotte Jama",
+    "tontine_point3": "Chaque membre cotisera à temps et selon un calendrier prédéfini",
+    "tontine_point4": "Recevez votre épargne et profitez de votre tour"
+  },
+
+  "innovation": {
+    "title_part1": "L'INNOVATION",
+    "title_part2": "DE VOLCAN D'OR",
+    "social_network_title": "RÉSEAU SOCIAL FINANCIER",
+    "social_network_desc": "Volcan d'Or permet aux utilisateurs de publier des posts, de commenter, aimer, partager et reposter comme sur un réseau social. Une vraie communauté d'épargnants se constitue pour encourager l'entraide et l'inspiration autour des objectifs financiers.",
+    "ai_assistant_title": "IA D'OR - ASSISTANT INTELLIGENT INTÉGRÉ",
+    "ai_assistant_desc": "L'IA d'Or est un micro intelligent intégré, basé sur l'intelligence artificielle, qui répond par audio ou texte, conseille sur les meilleures stratégies d'épargne selon les profils, et simplifie la navigation et l'utilisation de l'application.",
+    "wallet_title": "WALLET INTÉGRÉ MULTI-RECHARGES",
+    "wallet_desc": "Le Wallet intégré permet aux utilisateurs de recharger facilement leur solde via carte bancaires, Omani Cash, etc. Il est utilisé pour payer les cotisations de cycles laisir, transférer de l'argent vers les portefeuilles d'épargne.",
+    "security_title": "SÉCURITÉ ET CONFIANCE",
+    "security_desc": "Grâce à l'intégration avec Wizaj.ma pour la signature légalisée de contrats, la vérification d'identité via scan NFC ou CIN, et le stockage sécurisé, Volcan d'Or assure une expérience fiable pour chaque utilisateur."
+  },
+  "mission": {
+    "title": "NOTRE MISSION",
+    "desc": "Rendre l'épargne simple, accessible et sécurisée pour tous, en s'appuyant sur la technologie et la culture locale d'entraide."
+  },
+  "vision": {
+    "title": "NOTRE VISION",
+    "desc": "Construire un avenir plus sûr pour les générations futures à travers des solutions d'épargne digitales, adaptées aux besoins des familles du Maroc et de l'Afrique."
+  },
+
+  "why_choose": {
+    "title_part1": "POURQUOI",
+    "title_part2": "CHOISIR VOLCAN D'OR ?",
+    "benefits": {
+      "financial_security": {
+        "title": "Sécurité financière",
+        "desc": "Vos fonds sont protégés et bloqués jusqu'à la date choisie"
+      },
+      "ease_of_use": {
+        "title": "Simplicité d'utilisation",
+        "desc": "En quelques clics depuis votre mobile"
+      },
+      "fully_compliant": {
+        "title": "100% conforme",
+        "desc": "Partenariat avec des institutions financières locales"
+      },
+      "inclusive": {
+        "title": "Inclusif",
+        "desc": "Accessible même sans compte bancaire"
+      },
+      "transparency": {
+        "title": "Transparence & Traçabilité",
+        "desc": "Suivez vos transactions à tout moment"
+      },
+      "culturally_relevant": {
+        "title": "Culturellement pertinent",
+        "desc": "Basé sur les pratiques d'épargne traditionnelles"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "TÉMOIGNAGES",
+    "saida": {
+      "name": "Saïda EL Idrissi",
+      "city": "Fès",
+      "text": "Grâce à Volcan d'Or, j'ai pu économiser chaque mois pour les études de mon fils. L’application est claire, facile, et rassurante."
+    },
+    "monir": {
+      "name": "Mounir Nassiri",
+      "city": "Casablanca",
+      "text": "Je participe à une Daret depuis 6 mois, tout est automatisé. Plus de stress, plus d’oublis !"
+    }
+  },
+
+  "faq": {
+    "title_part1": "QUESTIONS",
+    "title_part2": "FRÉQUEMMENT POSÉES",
+    "secured_funds": {
+      "q": "Est-ce que les fonds sont sécurisés ?",
+      "a": "Oui. Les fonds sont stockés dans des comptes bancaires partenaires et vos données sont chiffrées."
+    },
+    "how_daret_works": {
+      "q": "Comment fonctionne la Daret ?",
+      "a": "Chaque membre paie une cotisation mensuelle. À chaque tour, l’un reçoit le montant total."
+    },
+    "who_can_use": {
+      "q": "Qui peut utiliser Volcan d’Or ?",
+      "a": "Toute personne résidant au Maroc ou dans un pays MENA. Il suffit d’un téléphone et d’une carte d’identité."
+    }
+  },
+
+  "contact": {
+    "title": "CONTACT",
+    "info": {
+      "location": {
+        "label": "Location",
+        "value": "Fès, Maroc"
+      },
+      "phone": {
+        "label": "Numéro de téléphone",
+        "value": "+212 622-445000"
+      },
+      "email": {
+        "label": "Email Address",
+        "value": "contact@volcandor.com"
+      },
+      "support": {
+        "label": "Support Live Chat",
+        "value": "08:00H - 23:00H"
+      }
+    },
+    "form": {
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "email": "Email",
+      "subject": "Objet",
+      "message": "Message",
+      "send": "Envoyer"
+    }
+  },
+
+  "footer": {
+    "company_description": "est une application mobile innovante dédiée à l’épargne familiale et communautaire.",
+    "links": {
+      "title": "Liens utiles",
+      "mentions_legales": "Mentions légales",
+      "politique": "Politique de confidentialité",
+      "conditions_generales": "⁠Conditions générales"
+    },
+    "copyright_extra": "Tous droits réservés."
+  }
+
+
+
+
+}

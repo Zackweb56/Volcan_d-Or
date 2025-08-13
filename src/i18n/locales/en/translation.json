@@ -1,0 +1,168 @@
+{
+  "navbar": {
+    "about": "About",
+    "services": "Our services",
+    "innovation": "The innovation of Volcan d'Or",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "SAVE TOGETHER, GROW TOGETHER.",
+    "description": "Volcan d'Or is a mobile app that allows Moroccan and MENA families to create savings portfolios for their children or family goals, and participate in 100% digital, secure, and automated tontine (Daret) cycles.",
+    "download": "Download the app",
+    "google_small": "Available on",
+    "google_main": "Google Play",
+    "apple_small": "Download on",
+    "apple_main": "App Store"
+  },
+
+  "about": {
+    "title": "ABOUT",
+    "description": "Volcan d’Or is a mobile application developed by the Moroccan startup Technologies d’Or, created to deliver inclusive digital solutions with a strong social impact."
+  },
+
+  "services": {
+    "nos": "OUR",
+    "services": "SERVICES",
+    "description": "Volcan d'Or is an innovative mobile app dedicated to family and community savings. It helps Moroccan families and those in the MENA region secure their children’s future and achieve financial goals through two main services.",
+    "portfolios_title": "Savings Portfolios",
+    "portfolios_desc": "Dedicated savings portfolios for each child or family goal.",
+    "point1": "Create a savings portfolio for each child or goal",
+    "point2": "Set an amount, duration, and saving frequency",
+    "point3": "Top up your Wallet using local payment methods",
+    "point4": "Money is automatically transferred to each portfolio",
+    "point5": "Track your savings progress in real time",
+    "tontine_title": "Digital Tontine",
+    "tontine_desc": "Digital tontine service among friends, family, colleagues, or neighbors.",
+    "tontine_point1": "Create or join a group with your loved ones",
+    "tontine_point2": "Set the rules for the Jama pot",
+    "tontine_point3": "Each member contributes on time according to a predefined schedule",
+    "tontine_point4": "Receive your savings and enjoy your turn"
+  },
+
+  "innovation": {
+    "title_part1": "INNOVATION",
+    "title_part2": "OF VOLCAN D'OR",
+    "social_network_title": "FINANCIAL SOCIAL NETWORK",
+    "social_network_desc": "Volcan d'Or allows users to post, comment, like, share, and repost like on a social network. A real community of savers is built to encourage support and inspiration around financial goals.",
+    "ai_assistant_title": "GOLD AI - INTEGRATED SMART ASSISTANT",
+    "ai_assistant_desc": "Gold AI is an integrated smart micro assistant based on artificial intelligence that responds via audio or text, advises on the best saving strategies depending on profiles, and simplifies navigation and usage of the app.",
+    "wallet_title": "MULTI-TOP-UP INTEGRATED WALLET",
+    "wallet_desc": "The integrated Wallet allows users to easily top up via bank cards, Omani Cash, etc. It is used to pay subscription cycles and transfer money to savings portfolios.",
+    "security_title": "SECURITY AND TRUST",
+    "security_desc": "Thanks to integration with Wizaj.ma for legalized contract signing, identity verification via NFC or ID scan, and secure storage, Volcan d'Or provides a reliable experience for every user."
+  },
+  "mission": {
+    "title": "OUR MISSION",
+    "desc": "Make saving simple, accessible, and secure for everyone by leveraging technology and local culture of mutual aid."
+  },
+  "vision": {
+    "title": "OUR VISION",
+    "desc": "Build a safer future for upcoming generations through digital saving solutions tailored to the needs of families in Morocco and Africa."
+  },
+
+  "why_choose": {
+    "title_part1": "WHY",
+    "title_part2": "CHOOSE VOLCAN D'OR?",
+    "benefits": {
+      "financial_security": {
+        "title": "Financial Security",
+        "desc": "Your funds are protected and locked until the chosen date"
+      },
+      "ease_of_use": {
+        "title": "Ease of Use",
+        "desc": "Manage everything in a few clicks from your mobile"
+      },
+      "fully_compliant": {
+        "title": "100% Compliant",
+        "desc": "Partnership with local financial institutions"
+      },
+      "inclusive": {
+        "title": "Inclusive",
+        "desc": "Accessible even without a bank account"
+      },
+      "transparency": {
+        "title": "Transparency & Traceability",
+        "desc": "Track your transactions anytime"
+      },
+      "culturally_relevant": {
+        "title": "Culturally Relevant",
+        "desc": "Based on traditional saving practices"
+      }
+    }
+  },
+
+  "testimonials": {
+    "title": "TESTIMONIALS",
+    "saida": {
+      "name": "Saïda EL Idrissi",
+      "city": "Fès",
+      "text": "Thanks to Volcan d'Or, I have been able to save every month for my son's studies. The app is clear, easy, and reassuring."
+    },
+    "monir": {
+      "name": "Mounir Nassiri",
+      "city": "Casablanca",
+      "text": "I’ve been participating in a Daret for 6 months, everything is automated. No stress, no forgetting!"
+    }
+  },
+
+  "faq": {
+    "title_part1": "FREQUENTLY",
+    "title_part2": "ASKED QUESTIONS",
+    "secured_funds": {
+      "q": "Are funds secure?",
+      "a": "Yes. Funds are stored in partner bank accounts and your data is encrypted."
+    },
+    "how_daret_works": {
+      "q": "How does the Daret work?",
+      "a": "Each member pays a monthly contribution. Each turn, one receives the total amount."
+    },
+    "who_can_use": {
+      "q": "Who can use Volcan d’Or?",
+      "a": "Anyone residing in Morocco or a MENA country. You only need a phone and an ID card."
+    }
+  },
+
+  "contact": {
+    "title": "CONTACT",
+    "info": {
+      "location": {
+        "label": "Location",
+        "value": "Fès, Morocco"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "value": "+212 622-445000"
+      },
+      "email": {
+        "label": "Email Address",
+        "value": "contact@volcandor.com"
+      },
+      "support": {
+        "label": "Live Chat Support",
+        "value": "08:00 AM - 11:00 PM"
+      }
+    },
+    "form": {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+
+  "footer": {
+    "company_description": "is an innovative mobile app dedicated to family and community savings.",
+    "links": {
+      "title": "Useful Links",
+      "mentions_legales": "Legal Notice",
+      "politique": "Privacy Policy",
+      "conditions_generales": "Terms & Conditions"
+    },
+    "copyright_extra": "All rights reserved."
+  }
+
+
+}
