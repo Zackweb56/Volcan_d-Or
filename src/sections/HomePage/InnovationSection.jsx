@@ -43,7 +43,7 @@ const InnovationSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-light text-start text-[#182e6f] mb-12">
+        <h2 className="text-4xl md:text-5xl font-light text-[#182e6f] mb-12 text-center md:text-left">
           {t('innovation.title_part1')}<br />
           <span className="font-bold"> {t('innovation.title_part2')}</span>
         </h2>
@@ -108,20 +108,20 @@ const InnovationSection = () => {
           </div>
 
           {/* Mission & Vision Content */}
-          <div className="space-y-16">
+          <div className="space-y-16 text-center">
             
             {/* Mission */}
-            <div className="text-center w-80">
-              <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-8 tracking-wide">
+            <div className="max-w-md mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6 tracking-wide">
                 {t('mission.title')}
               </h2>
               
-              {/* Mission Icon with enhanced decorative lines */}
-              <div className="flex justify-center items-center mb-8 relative">
-                {/* Continuous line behind circle */}
-                <div className="absolute w-full max-w-lg h-0.5 bg-blue-800"></div>
+              {/* Mission Icon with decorative line */}
+              <div className="flex justify-center items-center mb-6 relative">
+                {/* Line behind circle */}
+                <div className="absolute w-32 md:w-48 h-0.5 bg-blue-800"></div>
                 
-                {/* Icon on top of line */}
+                {/* Circle with icon */}
                 <div className="relative z-10">
                   <div className="w-16 h-16 rounded-full bg-blue-800 flex items-center justify-center shadow-lg">
                     <FaRocket className="w-6 h-6 text-white" />
@@ -129,23 +129,23 @@ const InnovationSection = () => {
                 </div>
               </div>
               
-              <p className="text-gray-900 text-base leading-relaxed max-w-lg mx-auto">
+              <p className="text-gray-900 text-base leading-relaxed">
                 {t('mission.desc')}
               </p>
             </div>
 
             {/* Vision */}
-            <div className="text-center w-80">
-              <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-8 tracking-wide">
+            <div className="max-w-md mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-6 tracking-wide">
                 {t('vision.title')}
               </h2>
               
-              {/* Vision Icon with enhanced decorative lines */}
-              <div className="flex justify-center items-center mb-8 relative">
-                {/* Continuous line behind circle */}
-                <div className="absolute w-full max-w-lg h-0.5 bg-blue-800"></div>
+              {/* Vision Icon with decorative line */}
+              <div className="flex justify-center items-center mb-6 relative">
+                {/* Line behind circle */}
+                <div className="absolute w-32 md:w-48 h-0.5 bg-blue-800"></div>
                 
-                {/* Icon on top of line */}
+                {/* Circle with icon */}
                 <div className="relative z-10">
                   <div className="w-16 h-16 rounded-full bg-blue-800 flex items-center justify-center shadow-lg">
                     <FaEye className="w-6 h-6 text-white" />
@@ -153,12 +153,13 @@ const InnovationSection = () => {
                 </div>
               </div>
               
-              <p className="text-gray-900 text-base leading-relaxed max-w-lg mx-auto">
+              <p className="text-gray-900 text-base leading-relaxed">
                 {t('vision.desc')}
               </p>
             </div>
 
           </div>
+
         </div>
       
       </div>

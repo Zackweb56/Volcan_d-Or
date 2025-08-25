@@ -53,7 +53,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-light text-start text-[#182e6f] mb-12">
+        <h2 className="text-4xl md:text-5xl font-light text-center md:text-left text-[#182e6f] mb-12">
           {t('why_choose.title_part1')}<br />
           <span className="font-bold">{t('why_choose.title_part2')}</span>
         </h2>

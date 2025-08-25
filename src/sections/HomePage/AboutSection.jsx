@@ -9,22 +9,45 @@ const AboutSection = () => {
 
   return (
     <section
-      className="relative flex flex-col lg:flex-row w-full h-[600px] overflow-hidden"
+      className="relative flex flex-col sm:flex-row w-full h-[400px] sm:h-[500px] lg:h-[600px] overflow-hidden"
       dir={isRTL ? 'rtl' : 'ltr'}
     >
-      {/* Left Side - Image (70%) */}
-      <div className="relative w-full lg:w-[60%] h-64 lg:h-full overflow-hidden z-0">
+      {/* Background Image - Full width on mobile, left side on larger screens */}
+      <div className="absolute inset-0 sm:relative sm:w-[60%] h-full overflow-hidden z-0">
+        {/* Mobile version - positioned at -98% */}
         <div
-          className="absolute inset-0 bg-cover bg-center -ml-102"
+          className="absolute inset-0 bg-cover bg-center sm:hidden"
           style={{
             backgroundImage: `url('assets/Volcan mockups/volcan mockups/Volcan Dor Office Logo.png')`,
-            width: '150%'
+            width: '190%',
+            left: '-140%'
+          }}
+        ></div>
+        
+        {/* Tablet and Desktop version - positioned at -35% */}
+        <div
+          className="absolute inset-0 bg-cover bg-center hidden sm:block"
+          style={{
+            backgroundImage: `url('assets/Volcan mockups/volcan mockups/Volcan Dor Office Logo.png')`,
+            width: '150%',
+            left: '-35%'
           }}
         ></div>
 
-        {/* Subtle Gradient Fade */}
+        {/* Mobile Gradient Fade - different for mobile layout */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 sm:hidden"
+          style={{
+            right: '48%',
+            background: isRTL
+            ? 'linear-gradient(to left, transparent 10%, rgba(255,255,255,1) 100%)'
+            : 'linear-gradient(to right, transparent 10%, rgba(255,255,255,1) 100%)'
+          }}
+        ></div>
+
+        {/* Tablet and Desktop Gradient Fade - original fade */}
+        <div
+          className="absolute inset-0 hidden sm:block"
           style={{
             background: isRTL
               ? 'linear-gradient(to left, transparent 80%, rgba(255,255,255,1) 100%)'
@@ -33,13 +56,13 @@ const AboutSection = () => {
         ></div>
       </div>
 
-      {/* Right Side - Text (30%) */}
-      <div className="w-full lg:w-[40%] bg-white/90 backdrop-blur-sm flex items-center px-8 lg:px-12 z-10 relative">
-        <div className='-ms-32'>
-          <h2 className="text-4xl md:text-6xl font-bold text-blue-900 mb-6">
+      {/* Text Content - Full width centered on mobile, right side on larger screens */}
+      <div className="relative sm:relative w-full sm:w-[40%] flex items-center px-4 sm:px-6 lg:px-12 z-10 py-8 sm:py-0">
+        <div className='w-full mt-20 sm:mt-0 sm:-ms-16 sm:-ms-24 lg:-ms-32 text-center sm:text-left'>
+          <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-8 sm:mb-4 lg:mb-6">
             {t('about.title')}
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed w-[80%]">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 leading-relaxed mx-auto sm:mx-0 w-[75%] sm:w-[90%] sm:w-[85%] lg:w-full">
             {t('about.description')}
           </p>
         </div>

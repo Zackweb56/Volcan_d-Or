@@ -20,61 +20,52 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-12 gap-10 items-center">
             {/* Contact Info - col-4 */}
             <div className="md:col-span-4 space-y-6">
-
-                <div className="flex gap-4">
-                    <div className="flex flex-col items-center">
-                        <FiMapPin className="text-blue-700 text-2xl flex-shrink-0" />
-                    </div>
-                    <div className="flex-1">
-                        <h4 className="font-semibold">{t("contact.info.location.label")}</h4>
-                        <p className="text-gray-600 -ml-9">{t("contact.info.location.value")}</p>
-                    </div>
+                <div className="flex gap-4 justify-center md:justify-start">
+                <FiMapPin className="text-blue-700 text-2xl flex-shrink-0" />
+                <div>
+                    <h4 className="font-semibold">{t("contact.info.location.label")}</h4>
+                    <p className="text-gray-600">{t("contact.info.location.value")}</p>
+                </div>
                 </div>
 
-                <div className="flex gap-4">
-                    <div className="flex flex-col items-center">
-                    <FiPhone className="text-blue-700 text-2xl flex-shrink-0" />
-                    </div>
-                    <div className="flex-1">
+                <div className="flex gap-4 justify-center md:justify-start">
+                <FiPhone className="text-blue-700 text-2xl flex-shrink-0" />
+                <div>
                     <h4 className="font-semibold">{t("contact.info.phone.label")}</h4>
                     <a
-                        href={`tel:${t("contact.info.phone.value")}`}
-                        className="text-blue-500 hover:underline -ml-9 block"
+                    href={`tel:${t("contact.info.phone.value")}`}
+                    className="text-blue-500 hover:underline block"
                     >
-                        {t("contact.info.phone.value")}
+                    {t("contact.info.phone.value")}
                     </a>
-                    </div>
                 </div>
-            
-                <div className="flex gap-4">
-                    <div className="flex flex-col items-center">
-                    <FiMail className="text-blue-700 text-2xl flex-shrink-0" />
-                    </div>
-                    <div className="flex-1">
+                </div>
+
+                <div className="flex gap-4 justify-center md:justify-start">
+                <FiMail className="text-blue-700 text-2xl flex-shrink-0" />
+                <div>
                     <h4 className="font-semibold">{t("contact.info.email.label")}</h4>
                     <a
-                        href={`mailto:${t("contact.info.email.value")}`}
-                        className="text-blue-500 hover:underline -ml-9 block"
+                    href={`mailto:${t("contact.info.email.value")}`}
+                    className="text-blue-500 hover:underline block"
                     >
-                        {t("contact.info.email.value")}
+                    {t("contact.info.email.value")}
                     </a>
-                    </div>
                 </div>
-                
-                <div className="flex gap-4">
-                    <div className="flex flex-col items-center">
-                    <FiClock className="text-blue-700 text-2xl flex-shrink-0" />
-                    </div>
-                    <div className="flex-1">
+                </div>
+
+                <div className="flex gap-4 justify-center md:justify-start">
+                <FiClock className="text-blue-700 text-2xl flex-shrink-0" />
+                <div>
                     <h4 className="font-semibold">{t("contact.info.support.label")}</h4>
-                    <p className="text-gray-600 -ml-9">{t("contact.info.support.value")}</p>
-                    </div>
+                    <p className="text-gray-600">{t("contact.info.support.value")}</p>
+                </div>
                 </div>
             </div>
 
             {/* Contact Form - col-8 */}
             <form className="md:col-span-8 bg-gray-50 shadow-md rounded-lg p-6 space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
                 <input
                     type="text"
                     placeholder={t("contact.form.first_name")}
@@ -103,7 +94,7 @@ const ContactSection = () => {
                     ></textarea>
                 <button
                     type="submit"
-                    className="w-40 bg-blue-900 text-white py-2 rounded-md hover:bg-blue-800 transition"
+                    className="w-40 bg-blue-900 text-white py-3 rounded-md hover:bg-blue-800 transition"
                     >
                     {t("contact.form.send")}
                 </button>

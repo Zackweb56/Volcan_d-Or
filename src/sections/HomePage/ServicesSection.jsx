@@ -67,12 +67,12 @@ const ServicesSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title & description */}
-        <div className="text-start mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-start text-[#182e6f]">
+        <div className="mb-16 text-center lg:text-start">
+          <h2 className="text-5xl md:text-5xl font-light text-[#182e6f]">
             {t('services.nos')}<br />
             <span className="font-bold">{t('services.services')}</span>
           </h2>
-          <p className="mt-8 text-lg text-gray-900 leading-relaxed max-w-full">
+          <p className="mt-8 text-base md:text-lg text-gray-900 leading-relaxed max-w-full font-extralight md:font-normal text-center lg:text-left">
             {t('services.description')}
           </p>
         </div>
@@ -83,16 +83,15 @@ const ServicesSection = () => {
           {/* 1st service: Portefeuilles d'épargne */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-12 lg:gap-16">
             {/* Phone mockups */}
-            <div className="flex-shrink-0 relative">
+            <div className="flex-shrink-0 relative w-full lg:w-auto">
               <div className="relative flex items-center justify-center">
                 <div className="relative z-10 transform -rotate-6">
                   <img
                     src="/assets/Volcan mockups/volcan mockups/iphone-15-pro-on-white-background-v6-front-view.png"
                     alt={t('services.portfolios_title')}
-                    className="w-48 md:w-56 lg:w-150 object-cover object-center"
+                    className="block mx-auto w-56 md:w-56 lg:w-150 object-cover object-center scale-110 md:scale-100"
                     style={{ 
-                        clipPath: 'inset(10% 15% 10% 15%)',
-                        transform: 'scale(1.4)'
+                        clipPath: 'inset(10% 15% 10% 15%)'
                     }}
                   />
                 </div>
@@ -100,11 +99,11 @@ const ServicesSection = () => {
             </div>
 
             {/* Text content */}
-            <div className="flex-1 max-w-lg">
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
+            <div className="flex-1 max-w-lg mx-auto">
+              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center lg:text-left">
                 {t('services.portfolios_title')}
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left">
                 {t('services.portfolios_desc')}
               </p>
               
@@ -126,16 +125,15 @@ const ServicesSection = () => {
           {/* 2nd service: Tontine Digitale */}
           <div className="flex flex-col lg:flex-row-reverse items-start lg:items-center gap-12 lg:gap-16">
             {/* Phone mockups */}
-            <div className="flex-shrink-0 relative">
+            <div className="flex-shrink-0 relative w-full lg:w-auto">
               <div className="relative flex items-center justify-center">
-                <div className="relative z-20 transform translate-x-8">
+                <div className="relative z-20 transform translate-x-0 lg:translate-x-8">
                   <img
                     src="/assets/Volcan mockups/volcan mockups/iPhone 11 Pro Free Premium Mockup PSD.png"
                     alt={t('services.tontine_title')}
-                    className="w-48 md:w-56 lg:w-150 object-cover object-center"
+                    className="block mx-auto w-56 md:w-56 lg:w-150 object-cover object-center scale-110 md:scale-100"
                     style={{ 
-                        clipPath: 'inset(10% 15% 10% 15%)',
-                        transform: 'scale(1.4)'
+                        clipPath: 'inset(10% 15% 10% 15%)'
                     }}
                   />
                 </div>
@@ -143,11 +141,11 @@ const ServicesSection = () => {
             </div>
 
             {/* Text content */}
-            <div className="flex-1 max-w-lg">
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
+            <div className="flex-1 max-w-lg mx-auto">
+              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center lg:text-left">
                 {t('services.tontine_title')}
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left">
                 {t('services.tontine_desc')}
               </p>
 

@@ -9,12 +9,12 @@ const Footer = () => {
   const isRTL = currentLang === 'ar';
 
   return (
-    <footer className="bg-gray-900 text-white py-10" dir={isRTL ? 'rtl' : 'ltr'}>
-      <div className="container mx-auto px-6 lg:px-16 max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-[#1a191d] text-white py-10" dir={isRTL ? 'rtl' : 'ltr'}>
+      <div className="container mx-auto px-6 lg:px-16 max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         
         {/* Left - Logo and description */}
-        <div>
-          <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
+        <div className="flex flex-col items-center md:items-start">
+          <h2 className="text-xl font-bold mb-3 flex items-center justify-center md:justify-start gap-2">
             <img
               src="/assets/Logo variations/normal/white icon/icon only.svg"
               alt="Volcan d'Or logo"
@@ -23,10 +23,11 @@ const Footer = () => {
             <span>VOLCAN D'OR</span>
           </h2>
 
-          <p className="text-gray-400 text-sm mb-4 w-50">
+          <p className="text-gray-400 text-sm mb-4 max-w-xs md:max-w-full">
             Volcan d’Or {t('footer.company_description')}
           </p>
-          <div className="flex gap-4">
+
+          <div className="flex gap-4 justify-center md:justify-start">
             <a href="#" className="hover:text-blue-400"><FaLinkedinIn /></a>
             <a href="#" className="hover:text-blue-400"><FaFacebookF /></a>
             <a href="#" className="hover:text-blue-400"><FaInstagram /></a>
@@ -35,7 +36,7 @@ const Footer = () => {
         </div>
 
         {/* Middle - Links */}
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <h3 className="font-semibold mb-3">{t('footer.links.title')}</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li><a href="#">{t('footer.links.mentions_legales')}</a></li>
@@ -45,15 +46,15 @@ const Footer = () => {
         </div>
 
         {/* Right - Download App */}
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <span className="block font-semibold text-md mb-3">
             {t('hero.download')}
           </span>
-          <div className="flex flex-row gap-2 flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-2 flex-wrap justify-center md:justify-start">
             {/* Google Play Button */}
             <a
               href="#"
-              className="bg-gray-900 border border-white px-5 py-3 rounded shadow-md transition duration-200 flex items-center gap-2"
+              className="bg-[#1a191d] border border-white px-5 py-3 rounded shadow-md transition duration-200 flex items-center gap-2"
             >
               <img
                 src="/assets/logo-google-playstore.svg"
@@ -73,7 +74,7 @@ const Footer = () => {
             {/* App Store Button */}
             <a
               href="#"
-              className="bg-gray-900 border border-white px-5 py-3 rounded shadow-md transition duration-200 flex items-center gap-2"
+              className="bg-[#1a191d] border border-white px-5 py-3 rounded shadow-md transition duration-200 flex items-center gap-2"
             >
               <img
                 src="/assets/Apple_logo_grey.svg"

@@ -34,7 +34,7 @@ const FAQSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-light text-start text-[#182e6f] mb-12">
+        <h2 className="text-4xl md:text-5xl font-light text-center md:text-left text-[#182e6f] mb-12">
           {t('faq.title_part1')}<br />
           <span className="font-bold">{t('faq.title_part2')}</span>
         </h2>
@@ -46,21 +46,24 @@ const FAQSection = () => {
               key={index}
               className="bg-gray-100 border border-gray-300 rounded-xl shadow-sm"
             >
-                <button
-                    onClick={() => toggleFAQ(index)}
-                    className="flex justify-between items-center w-full p-6 text-left"
-                    >
-                    <span className="font-semibold text-2xl text-blue-600">
-                        {item.question}
-                    </span>
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#2db1e1]">
-                        {openIndex === index ? (
-                        <FiMinus className="text-[#2db1e1]" size={16} />
-                        ) : (
-                        <FiPlus className="text-[#2db1e1]" size={16} />
-                        )}
-                    </span>
-                </button>
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center w-full p-6 text-left gap-4"
+              >
+                {/* Question text - smaller on mobile */}
+                <span className="font-semibold text-lg md:text-2xl text-blue-600 flex-1">
+                  {item.question}
+                </span>
+
+                {/* Circle container for plus/minus */}
+                <span className="flex items-center justify-center w-8 h-8 rounded-full border border-[#2db1e1] flex-shrink-0">
+                  {openIndex === index ? (
+                    <FiMinus className="text-[#2db1e1]" size={16} />
+                  ) : (
+                    <FiPlus className="text-[#2db1e1]" size={16} />
+                  )}
+                </span>
+              </button>
 
               {openIndex === index && (
                 <div className="px-6 pb-6 text-gray-600 leading-relaxed">
