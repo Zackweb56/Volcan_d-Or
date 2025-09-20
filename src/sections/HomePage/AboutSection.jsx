@@ -40,7 +40,7 @@ const AboutSection = () => {
           style={{
             right: '48%',
             background: isRTL
-            ? 'linear-gradient(to left, transparent 10%, rgba(255,255,255,1) 100%)'
+            ? 'linear-gradient(to left, transparent 0%, rgba(255,255,255,1) 10%)'
             : 'linear-gradient(to right, transparent 10%, rgba(255,255,255,1) 100%)'
           }}
         ></div>
@@ -58,7 +58,7 @@ const AboutSection = () => {
 
       {/* Text Content - Full width centered on mobile, right side on larger screens */}
       <div className="relative sm:relative w-full sm:w-[40%] flex items-center px-4 sm:px-6 lg:px-12 z-10 py-8 sm:py-0">
-        <div className='w-full mt-20 sm:mt-0 sm:-ms-16 sm:-ms-24 lg:-ms-32 text-center sm:text-left'>
+        <div className={`w-full mt-20 sm:mt-0 sm:-ms-16 sm:-ms-24 lg:-ms-32 ${isRTL ? 'text-center sm:text-right' : 'text-center sm:text-left'}`}>
           <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-8 sm:mb-4 lg:mb-6">
             {t('about.title')}
           </h2>

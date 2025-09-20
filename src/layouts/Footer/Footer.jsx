@@ -20,11 +20,11 @@ const Footer = () => {
               alt="Volcan d'Or logo"
               className="h-10"
             />
-            <span>VOLCAN D'OR</span>
+            <span>{t('hero.maintitle')}</span>
           </h2>
 
-          <p className="text-gray-400 text-sm mb-4 max-w-xs md:max-w-full">
-            Volcan d’Or {t('footer.company_description')}
+          <p className={`text-gray-400 text-sm mb-4 max-w-xs md:max-w-full ${isRTL ? 'text-right' : 'text-left'}`}>
+            {t('hero.maintitle')} {t('footer.company_description')}
           </p>
 
           <div className="flex gap-4 justify-center md:justify-start">
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         {/* Middle - Links */}
-        <div className="flex flex-col items-center md:items-start">
+        <div className={`flex flex-col items-center md:items-start ${isRTL ? 'text-right' : 'text-left'}`}>
           <h3 className="font-semibold mb-3">{t('footer.links.title')}</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
             <li><a href="#">{t('footer.links.mentions_legales')}</a></li>
@@ -61,7 +61,7 @@ const Footer = () => {
                 alt="Google Play"
                 className="h-6"
               />
-              <p className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+              <p className={`flex flex-col ${isRTL ? 'items-start mr-2' : 'ml-2'}`}>
                 <span className="font-semibold text-[11px]">
                   {t('hero.google_small')}
                 </span>
@@ -81,7 +81,7 @@ const Footer = () => {
                 alt="App Store"
                 className="h-6"
               />
-              <p className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
+              <p className={`flex flex-col ${isRTL ? 'items-start mr-2' : 'ml-2'}`}>
                 <span className="font-semibold text-[11px]">
                   {t('hero.apple_small')}
                 </span>
@@ -96,7 +96,7 @@ const Footer = () => {
 
       {/* Bottom copyright */}
       <div className="mt-10 text-center text-gray-500 text-xs border-t border-gray-700 pt-4">
-        Copyright © {new Date().getFullYear()} <b className='text-white'>Volcan d’Or</b>. {t('footer.copyright_extra')}
+        Copyright © {new Date().getFullYear()} <b className='text-white'>{t('hero.maintitle')}</b>. {t('footer.copyright_extra')}
       </div>
     </footer>
   );

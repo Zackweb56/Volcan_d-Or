@@ -10,97 +10,85 @@ const ContactSection = () => {
   const isRTL = currentLang === 'ar';
 
   return (
-    <section className="py-16 bg-white border-0 border-t border-t-gray-200" id="contact">
+    <section 
+      className="py-16 bg-white border-0 border-t border-t-gray-200" 
+      id="contact" 
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-[#182e6f] mb-16">
+        <h2 className={`text-4xl md:text-5xl font-bold text-center text-[#182e6f] mb-16 text-center`}>
           {t("contact.title")}
         </h2>
 
         <div className="grid md:grid-cols-12 gap-10 items-center">
-            {/* Contact Info - col-4 */}
-            <div className="md:col-span-4 space-y-6">
-                <div className="flex gap-4 justify-center md:justify-start">
-                <FiMapPin className="text-blue-700 text-2xl flex-shrink-0" />
-                <div>
-                    <h4 className="font-semibold">{t("contact.info.location.label")}</h4>
-                    <p className="text-gray-600">{t("contact.info.location.value")}</p>
-                </div>
-                </div>
-
-                <div className="flex gap-4 justify-center md:justify-start">
-                <FiPhone className="text-blue-700 text-2xl flex-shrink-0" />
-                <div>
-                    <h4 className="font-semibold">{t("contact.info.phone.label")}</h4>
+          {/* Contact Info - col-4 */}
+          <div className={`md:col-span-4 space-y-6 ${isRTL ? 'text-right' : 'text-left'}`}>
+            {[
+              { Icon: FiMapPin, label: "location.label", value: "location.value" },
+              { Icon: FiPhone, label: "phone.label", value: "phone.value", isLink: true, linkPrefix: 'tel:' },
+              { Icon: FiMail, label: "email.label", value: "email.value", isLink: true, linkPrefix: 'mailto:' },
+              { Icon: FiClock, label: "support.label", value: "support.value" },
+            ].map(({ Icon, label, value, isLink, linkPrefix }, idx) => (
+              <div
+                key={idx}
+                className={`flex gap-4 items-center`}
+              >
+                <Icon className="text-blue-700 text-2xl flex-shrink-0" />
+                <div className={`${isRTL ? 'text-right' : 'text-left'}`}>
+                  <h4 className="font-semibold">{t(`contact.info.${label}`)}</h4>
+                  {isLink ? (
                     <a
-                    href={`tel:${t("contact.info.phone.value")}`}
-                    className="text-blue-500 hover:underline block"
+                      href={`${linkPrefix}${t(`contact.info.${value}`)}`}
+                      className="text-blue-500 hover:underline block"
                     >
-                    {t("contact.info.phone.value")}
+                      {t(`contact.info.${value}`)}
                     </a>
+                  ) : (
+                    <p className="text-gray-600">{t(`contact.info.${value}`)}</p>
+                  )}
                 </div>
-                </div>
+              </div>
+            ))}
+          </div>
 
-                <div className="flex gap-4 justify-center md:justify-start">
-                <FiMail className="text-blue-700 text-2xl flex-shrink-0" />
-                <div>
-                    <h4 className="font-semibold">{t("contact.info.email.label")}</h4>
-                    <a
-                    href={`mailto:${t("contact.info.email.value")}`}
-                    className="text-blue-500 hover:underline block"
-                    >
-                    {t("contact.info.email.value")}
-                    </a>
-                </div>
-                </div>
-
-                <div className="flex gap-4 justify-center md:justify-start">
-                <FiClock className="text-blue-700 text-2xl flex-shrink-0" />
-                <div>
-                    <h4 className="font-semibold">{t("contact.info.support.label")}</h4>
-                    <p className="text-gray-600">{t("contact.info.support.value")}</p>
-                </div>
-                </div>
+          {/* Contact Form - col-8 */}
+          <form className={`md:col-span-8 bg-gray-50 shadow-md rounded-lg p-6 space-y-4 ${isRTL ? 'text-right' : 'text-left'}`}>
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder={t("contact.form.first_name")}
+                className={`w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${isRTL ? 'text-right' : 'text-left'}`}
+              />
+              <input
+                type="text"
+                placeholder={t("contact.form.last_name")}
+                className={`w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${isRTL ? 'text-right' : 'text-left'}`}
+              />
             </div>
-
-            {/* Contact Form - col-8 */}
-            <form className="md:col-span-8 bg-gray-50 shadow-md rounded-lg p-6 space-y-4">
-                <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-                <input
-                    type="text"
-                    placeholder={t("contact.form.first_name")}
-                    className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <input
-                    type="text"
-                    placeholder={t("contact.form.last_name")}
-                    className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                </div>
-                <input
-                    type="email"
-                    placeholder={t("contact.form.email")}
-                    className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <input
-                    type="text"
-                    placeholder={t("contact.form.subject")}
-                    className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <textarea
-                    placeholder={t("contact.form.message")}
-                    rows="4"
-                    className="w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    ></textarea>
-                <button
-                    type="submit"
-                    className="w-40 bg-blue-900 text-white py-3 rounded-md hover:bg-blue-800 transition"
-                    >
-                    {t("contact.form.send")}
-                </button>
-            </form>
+            <input
+              type="email"
+              placeholder={t("contact.form.email")}
+              className={`w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${isRTL ? 'text-right' : 'text-left'}`}
+            />
+            <input
+              type="text"
+              placeholder={t("contact.form.subject")}
+              className={`w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${isRTL ? 'text-right' : 'text-left'}`}
+            />
+            <textarea
+              placeholder={t("contact.form.message")}
+              rows="4"
+              className={`w-full bg-white border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 ${isRTL ? 'text-right' : 'text-left'}`}
+            ></textarea>
+            <button
+              type="submit"
+              className="w-40 bg-blue-900 text-white py-3 rounded-md hover:bg-blue-800 transition cursor-pointer"
+            >
+              {t("contact.form.send")}
+            </button>
+          </form>
         </div>
-
       </div>
     </section>
   );

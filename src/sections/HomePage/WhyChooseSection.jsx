@@ -2,11 +2,11 @@ import React from 'react';
 import useTranslation from '../../hooks/useTranslation';
 import i18n from '../../i18n/index';
 import { 
-  FaShieldAlt, 
-  FaStar, 
-  FaCheckCircle, 
-  FaUsers, 
-  FaEye, 
+  FaLock, 
+  FaPuzzlePiece, 
+  FaUniversity, 
+  FaAccessibleIcon, 
+  FaSync, 
   FaGlobeAfrica 
 } from 'react-icons/fa';
 
@@ -17,27 +17,27 @@ const WhyChooseSection = () => {
 
   const benefits = [
     {
-      icon: <FaShieldAlt className="w-7 h-7" />,
+      icon: <FaLock className="w-7 h-7" />,
       title: t('why_choose.benefits.financial_security.title'),
       description: t('why_choose.benefits.financial_security.desc')
     },
     {
-      icon: <FaStar className="w-7 h-7" />,
+      icon: <FaPuzzlePiece className="w-7 h-7" />,
       title: t('why_choose.benefits.ease_of_use.title'),
       description: t('why_choose.benefits.ease_of_use.desc')
     },
     {
-      icon: <FaCheckCircle className="w-7 h-7" />,
+      icon: <FaUniversity className="w-7 h-7" />,
       title: t('why_choose.benefits.fully_compliant.title'),
       description: t('why_choose.benefits.fully_compliant.desc')
     },
     {
-      icon: <FaUsers className="w-7 h-7" />,
+      icon: <FaAccessibleIcon className="w-7 h-7" />,
       title: t('why_choose.benefits.inclusive.title'),
       description: t('why_choose.benefits.inclusive.desc')
     },
     {
-      icon: <FaEye className="w-7 h-7" />,
+      icon: <FaSync className="w-7 h-7" />,
       title: t('why_choose.benefits.transparency.title'),
       description: t('why_choose.benefits.transparency.desc')
     },
@@ -53,7 +53,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-light text-center md:text-left text-[#182e6f] mb-12">
+        <h2 className={`text-4xl md:text-5xl font-light text-[#182e6f] mb-12 ${isRTL ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
           {t('why_choose.title_part1')}<br />
           <span className="font-bold">{t('why_choose.title_part2')}</span>
         </h2>

@@ -8,8 +8,9 @@
   },
   
   "hero": {
+    "maintitle": "Volcan d'Or",
     "subtitle": "ÉPARGNER ENSEMBLE, GRANDIR ENSEMBLE.",
-    "description": "Volcan d'or est une application mobile qui permet aux familles marocaines et MENA de constituer des portefeuilles d'épargne dédiés à leurs enfants ou à des objectifs familiaux, ainsi que de participer à des cycles de tontines (Daret) 100% digitales, sécurisées et automatisées.",
+    "description": "Volcan d'Or est une application mobile qui permet aux familles marocaines et MENA de constituer des portefeuilles d'épargne dédiés à leurs enfants ou à des objectifs familiaux, ainsi que de participer à des cycles de tontines (Daret) 100% digitales, sécurisées et automatisées.",
     "download": "Télécharger l'application",
     "google_small": "Disponible sur",
     "google_main": "Google Play",
@@ -19,13 +20,13 @@
 
   "about": {
     "title": "À PROPOS",
-    "description": "Volcan d’Or est une application mobile développée par la startup marocaine Technologies d’Or, fondée pour créer des solutions digitales inclusives à fort impact social."
+    "description": "Volcan d’Or est une application mobile développée par la startup marocaine Technologies d'Or, fondée pour créer des solutions digitales inclusives à fort impact social."
   },
 
   "services": {
     "nos": "NOS",
     "services": "SERVICES",
-    "description": "Volcan d'Or est une application mobile innovante dédiée à l'épargne familiale et communautaire. Elle permet aux familles marocaines et de la région MENA de sécuriser l'avenir de leurs enfants et de réaliser leurs objectifs financiers à travers deux services majeurs.",
+    "description": "Volcan d’Or est une application mobile innovante dédiée à l’épargne familiale et communautaire. Elle permet aux familles marocaines et de la région MENA de sécuriser l’avenir de leurs enfants et de réaliser leurs objectifs financiers à travers deux services majeurs.",
     "portfolios_title": "Portefeuilles d'épargne",
     "portfolios_desc": "Portefeuilles d'épargne dédiés pour chaque enfant ou objectif familial.",
     "point1": "Créez un portefeuille d'épargne pour chaque enfant ou objectif",
@@ -34,24 +35,24 @@
     "point4": "L'argent est automatiquement transféré vers chaque portefeuille",
     "point5": "Suivez l'évolution de votre épargne en temps réel",
     "tontine_title": "Tontine Digitale",
-    "tontine_desc": "Service de tontine digitalisé entre amis, familles, collègues ou voisinage.",
-    "tontine_point1": "Créez ou rejoignez un groupe avec vos proches",
-    "tontine_point2": "Fixez les règles du jeu de la cagnotte Jama",
-    "tontine_point3": "Chaque membre cotisera à temps et selon un calendrier prédéfini",
-    "tontine_point4": "Recevez votre épargne et profitez de votre tour"
+    "tontine_desc": "Cycles Daret modernes (tontines) entre amis, familles, collègues ou utilisateurs.",
+    "tontine_point1": "Créez votre propre Daret ou rejoignez celles déjà publiées",
+    "tontine_point2": "Sélectionnez votre ordre de réception dans le cycle",
+    "tontine_point3": "Payez vos cotisations à temps via votre Wallet rechargeable",
+    "tontine_point4": "Recevez votre tour directement sur votre compte bancaire"
   },
 
   "innovation": {
     "title_part1": "L'INNOVATION",
     "title_part2": "DE VOLCAN D'OR",
     "social_network_title": "RÉSEAU SOCIAL FINANCIER",
-    "social_network_desc": "Volcan d'Or permet aux utilisateurs de publier des posts, de commenter, aimer, partager et reposter comme sur un réseau social. Une vraie communauté d'épargnants se constitue pour encourager l'entraide et l'inspiration autour des objectifs financiers.",
+    "social_network_desc": "Volcan d’Or permet aux utilisateurs de publier des posts, de commenter, aimer, partager et reposter comme sur un réseau social. Une vraie communauté d’épargnants se construit pour encourager l’entraide et l'inspiration autour des objectifs financiers.",
     "ai_assistant_title": "IA D'OR - ASSISTANT INTELLIGENT INTÉGRÉ",
     "ai_assistant_desc": "L'IA d'Or est un micro intelligent intégré, basé sur l'intelligence artificielle, qui répond par audio ou texte, conseille sur les meilleures stratégies d'épargne selon les profils, et simplifie la navigation et l'utilisation de l'application.",
     "wallet_title": "WALLET INTÉGRÉ MULTI-RECHARGES",
     "wallet_desc": "Le Wallet intégré permet aux utilisateurs de recharger facilement leur solde via carte bancaires, Omani Cash, etc. Il est utilisé pour payer les cotisations de cycles laisir, transférer de l'argent vers les portefeuilles d'épargne.",
     "security_title": "SÉCURITÉ ET CONFIANCE",
-    "security_desc": "Grâce à l'intégration avec Wizaj.ma pour la signature légalisée de contrats, la vérification d'identité via scan NFC ou CIN, et le stockage sécurisé, Volcan d'Or assure une expérience fiable pour chaque utilisateur."
+    "security_desc": "Grâce à l'intégration avec Wraqi.ma pour la signature légalisée de contrats, la vérification d’identité via scan NFC ou CIN, et le stockage sécurisé, Volcan d’Or assure une expérience fiable pour chaque utilisateur."
   },
   "mission": {
     "title": "NOTRE MISSION",
@@ -129,11 +130,11 @@
     "info": {
       "location": {
         "label": "Location",
-        "value": "Fès, Maroc"
+        "value": "Salé, Maroc"
       },
       "phone": {
         "label": "Numéro de téléphone",
-        "value": "+212 622-445000"
+        "value": "+212622445000"
       },
       "email": {
         "label": "Email Address",

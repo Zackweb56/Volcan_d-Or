@@ -1,12 +1,11 @@
 import React from 'react';
 import { 
-  FaPiggyBank, 
+  FaEdit, 
   FaChartBar, 
   FaWallet, 
   FaExchangeAlt, 
-  FaEye,
-  FaUsers,
-  FaShieldAlt,
+  FaMoneyBillAlt,
+  FaMedal,
   FaCreditCard,
   FaFileInvoiceDollar
 } from 'react-icons/fa';
@@ -21,7 +20,7 @@ const ServicesSection = () => {
   // Icons for Portefeuilles d'épargne features
   const portfolioFeatures = [
     {
-      icon: <FaPiggyBank className="w-4 h-4" />,
+      icon: <FaEdit className="w-4 h-4" />,
       text: t('services.point1')
     },
     {
@@ -37,7 +36,7 @@ const ServicesSection = () => {
       text: t('services.point4')
     },
     {
-      icon: <FaEye className="w-4 h-4" />,
+      icon: <FaMoneyBillAlt className="w-4 h-4" />,
       text: t('services.point5')
     }
   ];
@@ -45,19 +44,19 @@ const ServicesSection = () => {
   // Icons for Tontine Digitale features  
   const tontineFeatures = [
     {
-      icon: <FaUsers className="w-4 h-4" />,
+      icon: <FaEdit className="w-4 h-4" />,
       text: t('services.tontine_point1')
     },
     {
-      icon: <FaShieldAlt className="w-4 h-4" />,
+      icon: <FaMedal className="w-4 h-4" />,
       text: t('services.tontine_point2')
     },
     {
-      icon: <FaCreditCard className="w-4 h-4" />,
+      icon: <FaWallet className="w-4 h-4" />,
       text: t('services.tontine_point3')
     },
     {
-      icon: <FaFileInvoiceDollar className="w-4 h-4" />,
+      icon: <FaCreditCard className="w-4 h-4" />,
       text: t('services.tontine_point4')
     }
   ];
@@ -68,11 +67,17 @@ const ServicesSection = () => {
         
         {/* Title & description */}
         <div className="mb-16 text-center lg:text-start">
-          <h2 className="text-5xl md:text-5xl font-light text-[#182e6f]">
-            {t('services.nos')}<br />
-            <span className="font-bold">{t('services.services')}</span>
+          <h2 className={`text-5xl md:text-5xl font-light text-[#182e6f] ${isRTL ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
+            {isRTL ? (
+              <span className="font-bold">{t('services.services')}</span> // Arabic: just "خدماتنا"
+            ) : (
+              <>
+                {t('services.nos')}<br />
+                <span className="font-bold">{t('services.services')}</span>
+              </>
+            )}
           </h2>
-          <p className="mt-8 text-base md:text-lg text-gray-900 leading-relaxed max-w-full font-extralight md:font-normal text-center lg:text-left">
+          <p className={`mt-8 text-base md:text-lg text-gray-900 leading-relaxed max-w-full font-extralight md:font-normal ${isRTL ? 'text-right' : 'text-left'}`}>
             {t('services.description')}
           </p>
         </div>
@@ -87,12 +92,9 @@ const ServicesSection = () => {
               <div className="relative flex items-center justify-center">
                 <div className="relative z-10 transform -rotate-6">
                   <img
-                    src="/assets/Volcan mockups/volcan mockups/iphone-15-pro-on-white-background-v6-front-view.png"
+                    src="/assets/Volcan mockups/volcan mockups/iphone-15-pro-on-white-background-v6-front-view.svg"
                     alt={t('services.portfolios_title')}
                     className="block mx-auto w-56 md:w-56 lg:w-150 object-cover object-center scale-110 md:scale-100"
-                    style={{ 
-                        clipPath: 'inset(10% 15% 10% 15%)'
-                    }}
                   />
                 </div>
               </div>
@@ -100,17 +102,17 @@ const ServicesSection = () => {
 
             {/* Text content */}
             <div className="flex-1 max-w-lg mx-auto">
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center lg:text-left">
+              <h3 className={`text-2xl md:text-3xl font-bold text-blue-900 mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>
                 {t('services.portfolios_title')}
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left">
+              <p className={`text-gray-600 mb-8 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                 {t('services.portfolios_desc')}
               </p>
               
               <div className="space-y-4">
                 {portfolioFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start mb-4 bg-white rounded-md p-4 drop-shadow-lg">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <div className={`flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1 ${isRTL ? 'ml-4' : 'mr-4'}`}>
                       <div className="text-white">
                         {feature.icon}
                       </div>
@@ -129,12 +131,9 @@ const ServicesSection = () => {
               <div className="relative flex items-center justify-center">
                 <div className="relative z-20 transform translate-x-0 lg:translate-x-8">
                   <img
-                    src="/assets/Volcan mockups/volcan mockups/iPhone 11 Pro Free Premium Mockup PSD.png"
+                    src="/assets/Volcan mockups/volcan mockups/iPhone 11 Pro Free Premium Mockup PSD.svg"
                     alt={t('services.tontine_title')}
                     className="block mx-auto w-56 md:w-56 lg:w-150 object-cover object-center scale-110 md:scale-100"
-                    style={{ 
-                        clipPath: 'inset(10% 15% 10% 15%)'
-                    }}
                   />
                 </div>
               </div>
@@ -142,17 +141,17 @@ const ServicesSection = () => {
 
             {/* Text content */}
             <div className="flex-1 max-w-lg mx-auto">
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4 text-center lg:text-left">
+              <h3 className={`text-2xl md:text-3xl font-bold text-blue-900 mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>
                 {t('services.tontine_title')}
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left">
+              <p className={`text-gray-600 mb-8 leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
                 {t('services.tontine_desc')}
               </p>
 
               <div className="space-y-4">
                 {tontineFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start mb-4 bg-white rounded-md p-4 drop-shadow-lg">
-                    <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                    <div className={`flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1 ${isRTL ? 'ml-4' : 'mr-4'}`}>
                       <div className="text-white">
                         {feature.icon}
                       </div>

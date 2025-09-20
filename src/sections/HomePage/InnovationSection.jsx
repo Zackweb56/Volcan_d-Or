@@ -3,7 +3,7 @@ import {
   FaAt, 
   FaMicrophone, 
   FaCreditCard, 
-  FaShieldAlt,
+  FaLock, 
   FaRocket,
   FaEye
 } from 'react-icons/fa';
@@ -32,7 +32,7 @@ const InnovationSection = () => {
       description: t('innovation.wallet_desc')
     },
     {
-      icon: <FaShieldAlt className="w-6 h-6" />,
+      icon: <FaLock className="w-6 h-6" />,
       title: t('innovation.security_title'),
       description: t('innovation.security_desc')
     }
@@ -43,7 +43,7 @@ const InnovationSection = () => {
       <div className="container mx-auto px-6 lg:px-16 max-w-6xl">
         
         {/* Title */}
-        <h2 className="text-4xl md:text-5xl font-light text-[#182e6f] mb-12 text-center md:text-left">
+        <h2 className={`text-4xl md:text-5xl font-light text-[#182e6f] mb-12 ${isRTL ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
           {t('innovation.title_part1')}<br />
           <span className="font-bold"> {t('innovation.title_part2')}</span>
         </h2>
@@ -95,13 +95,9 @@ const InnovationSection = () => {
               {/* Left phone - iPhone 15 Pro */}
               <div className="relative z-10 transform">
                 <img
-                  src="/assets/Volcan mockups/volcan mockups/iPhone 15 Pro Mockup.png"
+                  src="/assets/Volcan mockups/volcan mockups/iPhone 15 Pro Mockup.svg"
                   alt="iPhone 15 Pro Mockup - Portefeuilles d'épargne"
                   className="w-56 md:w-64 lg:w-160 object-cover object-center"
-                  style={{
-                      clipPath: 'inset(10% 15% 10% 15%)',
-                      transform: 'scale(1.6)' 
-                  }}
                 />
               </div>
             </div>

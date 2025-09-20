@@ -56,6 +56,7 @@ const Navbar = () => {
               key={index}
               label={item.label}
               href={item.href}
+              isMobile={true}
               onClick={() => setMenuOpen(false)} // close menu on click
             />
           ))}

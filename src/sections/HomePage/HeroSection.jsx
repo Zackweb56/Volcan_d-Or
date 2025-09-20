@@ -6,27 +6,30 @@ const HeroSection = () => {
   const { t } = useTranslation();
   const currentLang = i18n.language;
   const isRTL = currentLang === 'ar';
-
+  
   return (
     <section
-      className="relative bg-blue-800 text-white overflow-hidden min-h-screen"
+      className="relative text-white overflow-hidden min-h-screen"
       dir={isRTL ? 'rtl' : 'ltr'}
     >
-      {/* Background Overlay */}
+      {/* Background Image */}
       <div
-        className="absolute inset-0 bg-blue-800 bg-opacity-60 bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: `url('/assets/')` }}
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url('/assets/volcan_hero_bg.svg')` }}
       ></div>
-
+      
+      {/* Blue Overlay */}
+      <div className="absolute inset-0 bg-blue-800/80"></div>
+      
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-16 max-w-6xl pt-20 sm:pt-24 lg:pt-10 pb-16 sm:pb-20 flex flex-col lg:flex-row items-center justify-between min-h-screen lg:min-h-0">
         {/* Left Content */}
-        <div className="lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left w-full">
+        <div className={`lg:w-1/2 space-y-4 sm:space-y-6 w-full ${isRTL ? 'text-center lg:text-right' : 'text-center lg:text-left'}`}>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
-            Volcan d'Or
+            {t('hero.maintitle')}
           </h1>
 
           <p
-            className="uppercase font-normal text-[7px] sm:text-sm md:text-base text-white -mt-2 sm:-mt-4 lg:-mt-8"
+            className={`uppercase font-normal text-[7px] sm:text-sm md:text-base text-white ${isRTL ? '-mt-1 sm:-mt-2 lg:-mt-4' : '-mt-2 sm:-mt-4 lg:-mt-8'}`}
             style={{ letterSpacing: isRTL ? 'normal' : '0.1em' }}
           >
             {t('hero.subtitle')}
@@ -62,7 +65,6 @@ const HeroSection = () => {
                   </span>
                 </p>
               </a>
-
               <a
                 href="#"
                 className="bg-blue-400 px-6 sm:px-8 py-3 rounded shadow-md transition duration-200 flex items-center justify-center sm:justify-start"
